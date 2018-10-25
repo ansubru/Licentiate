@@ -1,0 +1,68 @@
+\begin{tikzpicture}
+    \begin{axis}[
+                %grid=both,
+                ymin=0,
+                ymax=1,
+                xmax=1,
+                xmin=0,
+                xtick = 0.47,
+                xticklabel=$\kappa _{\text{cut-off}}$,
+                ytick = \empty,
+                yticklabel=\empty,
+                %minor tick num=1,
+                axis lines = middle,
+                xlabel=$\kappa$,
+                ylabel=$E(\kappa)$,
+                xlabel style={at=(current axis.right of origin), anchor=west},
+                ylabel style={at=(current axis.above origin), anchor=south},
+                %label style = {at={(ticklabel cs:1.1)}}
+                ]
+\end{axis}
+
+\coordinate (B) at (6*0.17,                6*0.84);
+\coordinate (F) at (6*0.200207468879668,   6*0.8737659643261302);
+\coordinate (G) at (6*0.2105809128630705,  6*0.8841421027105674);
+\coordinate (H) at (6*0.22614107883817425, 6*0.890615401196314);
+\coordinate (I) at (6*0.24481327800829872, 6*0.8918898528857034);
+\coordinate (J) at (6*0.2634854771784232,  6*0.8866707980815864);
+\coordinate (K) at (6*0.2780082987551867,  6*0.8749636255860322);
+\coordinate (L) at (6*0.2914937759336099,  6*0.8632578002909952);
+\coordinate (M) at (6*0.3112033195020747,  6*0.8385568788058414);
+\coordinate (N) at (6*0.3360995850622406,  6*0.8060570135258931);
+\coordinate (P) at (6*0.39937759336099576, 6*0.7059748342943364);
+\coordinate (Q) at (6*0.48340248962655596, 6*0.5695020746887967);
+\coordinate (R) at (6*0.567427385892116,   6*0.4434189254728673);
+\coordinate (S) at (6*0.6369294605809128,  6*0.3537182734278170);
+\coordinate (T) at (6*0.7136929460580912,  6*0.2679042948752492);
+\coordinate (U) at (6*0.7790456431535268,  6*0.2054817589049954);
+\coordinate (V) at (6*0.8495850622406638,  6*0.1469485908282588);
+\coordinate (W) at (6*0.9159751037344398,  6*0.1001091232419033);
+
+%  \draw [gray!50]  (A) -- (B);
+  \draw [] plot [smooth, tension=0.] coordinates {(B) (F) (G) (H) (I) (J) (K) (L) (M) (N) (P) (Q) (R) (S) (T) (U) (V) (W)};
+
+  \draw [dashed] (2.3,0.) -- (2.3,6);
+  \draw [dashed] (4.,0.) -- (4.,6);
+
+  \draw [|latex-,thick] (1.,1.) -- (1.1,1);
+  \draw [-|,thick] (5.4,1.) -- (5.5,1);
+  \node at (3.25,1) [yshift=0.3cm] {DNS};
+  \draw [-latex, thick] (1.,1.) -- (5.5,1);
+
+  \draw [|latex-|,thick] (1.,2.) -- (3.25,2);
+  \draw [-|,dashed, gray, thick] (5.4,2.) -- (5.5,2);
+  \node at (3.25,2) [yshift=0.3cm] {LES};
+  \draw [-latex,dashed, gray, thick] (3.25,2.) -- (5.5,2);
+
+  \draw [|latex-|,thick] (1.,3.) -- (1.8,3);
+  \draw [-|,dashed, gray, thick] (5.4,3.) -- (5.5,3);
+  \node at (3.25,3) [yshift=0.3cm] {URANS};
+  \draw [-latex,dashed, gray, thick] (1.8,3.) -- (5.5,3);
+
+  \draw [|latex-,thick, gray, dashed] (1.,4.) -- (1.1,4);
+  \draw [-|,dashed, gray, thick] (5.4,4.) -- (5.5,4);
+  \node at (3.25,4) [yshift=0.3cm] {RANS};
+  \draw [-latex,dashed, gray, thick] (1.1,4.) -- (5.5,4);
+
+\end{tikzpicture}
+

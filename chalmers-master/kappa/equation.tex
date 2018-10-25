@@ -1,0 +1,25 @@
+\section{Governing equations}
+The governing equations, continuity, momentum and energy equations, presented in Eq. \ref{eq:NS}, often refered to as the Navier-Stokes equations, are solved in the CFD solver. On compressible, unsteady and viscid form are
+\begin{equation} 
+  \label{eq:NS}
+  \begin{gathered}
+    \frac{\partial \bar{\rho}}{\partial t} + \frac{\partial \left(\bar{\rho} {u}_j \right)}{\partial x_j} = 0 \\
+    \frac{\partial \left( \bar{\rho} {u}_i \right)}{\partial t} + \frac{\partial\left(\bar{\rho} {u}_i {u}_j \right)}{\partial x_j} = -\frac{\partial \bar{p}\delta _{ij}}{\partial x_i} + \frac{\partial {\sigma} _{ij}}{\partial x_i}+\frac{\partial \tau _{ij}}{\partial x_j} \\
+    \frac{\partial \left( \bar{\rho} {e}_0\right)}{\partial t} + \frac{\partial \left(\bar{\rho} {e}_0 {u}_j\right)}{\partial x_j}= -\frac{\partial \bar{p}{u}_j}{\partial x_j}+C_p\frac{\partial}{\partial x_j}\left(\left(\frac{\mu}{Pr}+\frac{\mu _t}{Pr_t}\right)\frac{\partial {T}}{\partial x_j}\right)+\frac{\partial}{\partial x_j}\left({u}_i\left({\sigma} _{ij}+\tau _{ij}\right)\right)
+  \end{gathered}
+\end{equation}
+where ${\sigma} _{ij}$ is the Favre-filtered viscous stress tensor
+\begin{equation}
+  {\sigma} _{ij} = \mu \left(2{S}_{ij}-\frac{2}{3}{S}_{mm}\delta _{ij}\right),
+\end{equation}
+and ${S}_{ij}$ is the Favre-filtered strain rate tensor
+\begin{equation}
+  {S}_{ij}=\frac{1}{2}\left(\frac{\partial {u}_i}{\partial x_j}+\frac{\partial {u}_j}{\partial x_i}\right)
+\end{equation}
+The $\tau _{ij}$ is the turbulent stress term which models the momentum transport due to turbulence. It is this term that is solved dependant on which turbulence model is used, where resolving it results in high demands on the mesh- and time-scale of the simulation, hence DNS. This term is then modeled to some extent when using less computationally demanding turbulence models.\\
+%\begin{equation}
+%  \tau _{ij} = \mu _t 2{S}_{ij}
+%\end{equation}
+The system of equation are then closed by assuming thermally perfect gas and that the gas is calorically perfect. Those assumptions imply that the gas obeys the gas law and that internal energy and enthalpy are linear functions of temperature.
+
+

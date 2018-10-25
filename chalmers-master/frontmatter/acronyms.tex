@@ -1,0 +1,34 @@
+% To find all three-letter acronyms in file kappa/body.tex that are outside of comments: 
+% grep -o "[^%]*" kappa/body.tex | grep -o "\b[A-Z][A-Z][A-Z]\b" | sort | uniq
+
+\begin{tabular}{ l c l }
+%  \vspace{0.2cm}
+%  \textit{Latin symbols} & &\\
+%
+%  \vspace{0.2cm}
+%  \textit{Greek symbols} & &\\
+%
+%  \vspace{0.2cm}
+%  \textit{Subscripts} & &\\
+%
+%  \vspace{0.2cm}
+%  \textit{Superscripts} & &\\
+%  
+  \vspace{0.2cm}
+  \textit{Abbriviations} & &\\
+  CFD & -- & Computational Fluid Dynamics\\
+  LPC & -- & Low Pressure Compressor\\
+  HPC & -- & High Pressure Compressor\\
+  ICD & -- & Intermediate Compressor Duct\\
+  PSW & -- & Pre-Swirler\\
+  OGV & -- & LPC Outlet Guide Vanes\\
+  LES & -- & Large Eddy Simulations\\
+  RANS& -- & Reynolds-Averaged Navier-Stokes\\
+  DDES& -- & Delayed Detached Eddy Simulations\\
+  URANS& -- & Unsteady RANS\\
+  SGS & -- & Sub-Grid-Scales\\
+  DNS & -- & Direct Numerical Simulations\\
+  SA  & -- & Spalart-Allmaras\\
+  GGI & -- & General Grid Interface\\
+
+\end{tabular}

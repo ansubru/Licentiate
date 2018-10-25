@@ -1,0 +1,15 @@
+I would like to thank my supervisors, Niklas Andersson at Chalmers and Fredrik Wallin at GKN Aerospace for their neverending support and guidence, especially when I ask them to help me last minute.
+
+Thanks to my colleagues and friends at Chalmers who give me a great working environment, where would I be without all those fikas. To Adam Jareteg my roommate, I would like to give special thanks for always being up for discussions, no matter how much interest he has in the subject, work wise or not and to be willing to listen to me butchering the Swedish language.
+
+I would like to thank my family who has given the possibility to expand the world I live in and always supporting me. Last, but deffinetly not the least, my girlfriend Guðrún for always being there, helping me making my dreams come true.
+
+\vskip 2pc
+
+This research work was funded by the Swedish National Aviation Engineering Research Programme, NFFP
+with financial support from VINNOVA and the Swedish Defense Material Administration (FMV). The author would like to acknowledge GKN Aerospace for the permission to publish their work. All CFD simulations were performed using SNIC (Swedish National Infrastructure for Computing) resources at the National Supercomputer Center in Sweden, NSC.
+\vskip 2pc
+
+%\noindent \thesisauthor
+
+%\noindent \thesiscity, March\  2018  % Since dedication is written a month or more before the actual thesis date, \thesismonth and \thesisyear is not used here.

@@ -1,0 +1,20 @@
+Air traffic is rapidly increasing, with no sign of slowing down, resulting in increased green-house gases emission. With emission criteria becoming stricter every year, the aircraft design is subjected to continuous improvements. The development of more efficient aircraft engines plays a central role in the strive towards lower emission levels.
+
+The engine is built up from different modules that are normally designed in isolation. However, as high-performance computational resources are becoming more accessible, a move towards a more integrated design can be considered. The integrated design lowers the need for modeling the interaction effects between modules, and thus produces a more realistic flow representation. To take further advantages of the increasing computational resources, higher fidelity models such as the Delayed Detached Eddy Simulation (DDES) model should be considered for future simulations. The steps towards applying those models for industrial relevant configurations is the subject of this thesis.
+
+An experimental test rig, representing the integrated intermediate compressor duct (ICD), is simulated using the Chalmers-developed code G3D::Flow. The ICD has not been studied to the same extent as the surrounding components but has great potential as a better design can lead to shorter and lighter engines. The simulations are performed using the Spalart-Allmaras (SA) one-equation turbulence model, which has been implemented as part of the work presented in this thesis and verified for simple test cases. The SA model was chosen as it is easily altered to a DDES model and has proven to be efficient for turbomachinery applications. Furthermore, to give confidence in the accuracy of the G3D:Flow solver, the results from simulating the ICD are compared to results obtained using the commercial code CFX. The ICD simulations are performed at two different off-design conditions, where different amount of mass-flow is extracted through a bleed-pipe upstream of the duct. In the two cases, $10\%$ and $40\%$ of the inlet mass-flow is extracted through the bleed pipe. The results from the two solvers agree well for the $10\%$ bleed case with significant differences in the results obtained for the $40\%$ bleed case.
+
+To further ensure the capabilities of G3D::Flow and to serve as a benchmark case for future unsteady simulations, steady state results from G3D::Flow were compared to experimental data. The simulated results compare well to the experimental data for the lower bleed fraction whereas there are strong pressure fluctuations present in the higher bleed fraction. Those effects where suspected to be caused by the short bleed pipe, affecting the boundary condition resulting in difficulties to get a converged solution.
+
+As a step towards analysing the ICD using the DDES model, a single blade module was simulated. This work was conducted to analyse the performance of the DDES model on a smaller scale, where the transition location between the RANS and LES modes was of great interest. A modification to the original DDES model was suggested by literature, resulting in improved performance.
+%Emission
+%Compressor duct
+%G3dflow
+%comparison
+%Verification
+%Paper A
+%Paper B
+
+%Why
+%What
+
